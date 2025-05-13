@@ -1,6 +1,6 @@
 enable-magisk-update = true # set this to false if you do not want to receive updates for the module in magisk app
 parallel-jobs = 1
-
+patches-version = "dev" # 'latest', 'dev', or a version number. default: "latest"
 # add 'enabled = false' for not patching a specific app or remove it from the config
 # see https://github.com/j-hc/revanced-magisk-module/blob/main/CONFIG.md for more detailed explanations
 
@@ -14,15 +14,14 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
 uptodown-dlurl = "https://youtube.en.uptodown.com/android"
 # archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
 
-[Spotify]
-enabled = false
-uptodown-dlurl = "https://spotify.en.uptodown.com/android"
-
 [Instagram]
 enabled = true
 apkmirror-dlurl = "https://apkmirror.com/apk/instagram/instagram-instagram/"
 arch = "arm64-v8a"
-patches-version = "dev" # 'latest', 'dev', or a version number. default: "latest"
+
+[Spotify]
+enabled = false
+uptodown-dlurl = "https://spotify.en.uptodown.com/android"
 
 [GooglePhotos]
 enabled = false
