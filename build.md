@@ -1,4 +1,3 @@
-Instagram: 378.0.0.52.68  
 Music: 8.05.51  
 YouTube: 20.13.41  
 
