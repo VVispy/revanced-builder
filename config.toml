@@ -14,10 +14,11 @@ uptodown-dlurl = "https://youtube.en.uptodown.com/android"
 # archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
 
 [Instagram]
-enabled = true
 apkmirror-dlurl = "https://apkmirror.com/apk/instagram/instagram-instagram/"
 arch = "arm64-v8a"
-version = "auto"
+version = "latest"
+included-patches = "'Disable signature check'"
+exclusive-patches = true
 
 [Music]
 enabled = true
