@@ -1,4 +1,5 @@
-Music: 8.31.51  
+Instagram: 393.1.0.50.76  
+Music: 8.31.53  
 YouTube: 20.13.41  
 
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
