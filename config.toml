@@ -17,7 +17,7 @@ uptodown-dlurl = "https://youtube.en.uptodown.com/android"
 apkmirror-dlurl = "https://apkmirror.com/apk/instagram/instagram-instagram/"
 arch = "arm64-v8a"
 apkmirror-dpi = "480dpi"
-version = "latest"
+version = "auto"
 included-patches = "'Disable signature check'"
 exclusive-patches = true
 
