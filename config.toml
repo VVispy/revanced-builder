@@ -13,14 +13,6 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
 uptodown-dlurl = "https://youtube.en.uptodown.com/android"
 # archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
 
-[Instagram]
-apkmirror-dlurl = "https://apkmirror.com/apk/instagram/instagram-instagram"
-arch = "arm64-v8a"
-apkmirror-dpi = "480dpi"
-version = "auto"
-included-patches = "'Disable signature check'"
-exclusive-patches = true
-
 [Music]
 enabled = true
 version = "auto"
@@ -28,6 +20,15 @@ arch = "arm64-v8a"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
 uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
 # archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music"
+
+[Instagram]
+enabled = false
+arch = "arm64-v8a"
+apkmirror-dpi = "480dpi"
+version = "auto"
+included-patches = "'Disable signature check'"
+exclusive-patches = true
+apkmirror-dlurl = "https://apkmirror.com/apk/instagram/instagram-instagram"
 
 [Spotify]
 enabled = false
