@@ -56,7 +56,7 @@ uptodown-dlurl = "https://facebook-messenger.en.uptodown.com/android"
 arch = "arm64-v8a"
 
 [SoundCloud]
-apkmirror-dlurl = "https://www.apkmirror.com/apk/soundcloud/"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/soundcloud/soundcloud-soundcloud/"
 uptodown-dlurl = "https://facebook.en.uptodown.com/android"
 arch = "arm64-v8a"
 
