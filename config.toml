@@ -27,6 +27,7 @@ uptodown-dlurl = "https://google-photos.en.uptodown.com/android"
 
 [Instagram]
 arch = "arm64-v8a"
+version = "auto"
 included-patches = "'Anonymous story viewing' 'Hide explore feed' 'Hide navigation buttons' 'Hide Stories from Home' 'Hide suggested content' 'Open links externally' 'Disable story auto flipping'"
 uptodown-dlurl = "https://instagram.en.uptodown.com/android"
 apkmirror-dlurl = "https://apkmirror.com/apk/instagram/instagram-instagram"
