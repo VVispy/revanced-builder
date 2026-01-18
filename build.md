@@ -5,6 +5,7 @@ Messenger: 545.0.0.0.1
 Proton-Mail: 4.15.0  
 Proton-VPN: 5.15.5.0  
 Reddit: 2026.03.0  
+SoundCloud: 2025.05.27-release  
 TikTok: 36.5.4  
 Twitch: 16.9.1  
 Twitter: 10.86.0-release.0  
