@@ -7,8 +7,6 @@ Proton-VPN: 5.15.5.0
 Reddit: 2026.03.0  
 SoundCloud: 2025.05.27-release  
 TikTok: 36.5.4  
-Twitch: 16.9.1  
-Twitter: 10.86.0-release.0  
 YouTube: 20.14.43  
 YouTube-Music: 8.10.52  
 
