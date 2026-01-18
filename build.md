@@ -1,6 +1,6 @@
 Facebook: 490.0.0.63.82  
 Google-Photos: 7.59.0.856624550  
-Instagram: 412.0.0.35.87  
+Instagram: 401.0.0.48.79  
 Messenger: 545.0.0.0.1  
 Proton-Mail: 4.15.0  
 Proton-VPN: 5.15.5.0  
