@@ -16,12 +16,12 @@ apkmirror-dlurl = "https://apkmirror.com/apk/redditinc/reddit/"
 uptodown-dlurl = "https://reddit-official-app.en.uptodown.com/android"
 arch = "arm64-v8a"
 
-[Music]
+[YouTube-Music]
 arch = "arm64-v8a"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
 uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
 
-[GooglePhotos]
+[Google-Photos]
 arch = "arm64-v8a"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/photos/"
 uptodown-dlurl = "https://google-photos.en.uptodown.com/android"
@@ -61,17 +61,17 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/soundcloud/"
 uptodown-dlurl = "https://facebook.en.uptodown.com/android"
 arch = "arm64-v8a"
 
-[Proton Mail]
+[Proton-Mail]
 uptodown-dlurl = "https://protonmail.en.uptodown.com/android"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/proton-technologies-ag/protonmail-encrypted-email/"
 arch = "arm64-v8a"
 
-[Proton VPN]
+[Proton-VPN]
 apkmirror-dlurl = "https://www.apkmirror.com/apk/proton-technologies-ag/protonvpn-secure-and-free-vpn/"
 uptodown-dlurl = "https://protonvpn.en.uptodown.com/android"
 arch = "arm64-v8a"
 
-[Adobe Lightroom]
+[Adobe-Lightroom]
 uptodown-dlurl = "https://adobe-lightroom-mobile.en.uptodown.com/android"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/adobe/lightroom/"
 arch = "arm64-v8a"
