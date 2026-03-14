@@ -85,7 +85,7 @@ get_prebuilts() {
 			name_ver="$ver"
 		fi
 
-		local url file tag_name name
+		local url file tag_name matches
 		file=$(find "$dir" -name "*${fprefix}-${name_ver#v}.*" -type f 2>/dev/null)
 		if [ -z "$file" ]; then
 			local resp asset name
@@ -93,13 +93,17 @@ get_prebuilts() {
 			tag_name=$(jq -r '.tag_name' <<<"$resp")
 			matches=$(jq -e '.assets | map(select(.name | endswith("asc") | not))' <<<"$resp")
 			if [ "$(jq 'length' <<<"$matches")" -gt 1 ]; then
-				matches=$(jq -e -r 'map(select(.name | contains("-dev") | not))' <<<"$matches")
+				local matches_new
+				matches_new=$(jq -e -r 'map(select(.name | contains("-dev") | not))' <<<"$matches")
+				if [ "$(jq 'length' <<<"$matches_new")" -eq 1 ]; then
+					matches=$matches_new
+				fi
 			fi
 			if [ "$(jq 'length' <<<"$matches")" -eq 0 ]; then
 				epr "No asset was found"
 				return 1
 			elif [ "$(jq 'length' <<<"$matches")" -ne 1 ]; then
-				wpr "More than 1 asset was found for this cli release. Falling back to the first one found..."
+				wpr "More than 1 asset was found for this release. Falling back to the first one found..."
 			fi
 			asset=$(jq -r ".[0]" <<<"$matches")
 			url=$(jq -r .url <<<"$asset")
@@ -621,7 +625,7 @@ build_rv() {
 	for build_mode in "${build_mode_arr[@]}"; do
 		patcher_args=("${p_patcher_args[@]}")
 		pr "Building '${table}' in '$build_mode' mode"
-		if [ -n "$microg_patch" ]; then
+		if [ -n "$microg_patch" ] || [ -f "${stock_apk}.apkm" ]; then
 			patched_apk="${TEMP_DIR}/${app_name_l}-${rv_brand_f}-${version_f}-${arch_f}-${build_mode}.apk"
 		else
 			patched_apk="${TEMP_DIR}/${app_name_l}-${rv_brand_f}-${version_f}-${arch_f}.apk"
